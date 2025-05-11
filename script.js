@@ -10,7 +10,7 @@ const base = 100;
 
       document.querySelectorAll('.rep').forEach(el => {
         if (!el.checked) return;
-        const c = el.dataset.coef;
+        const c = el.getAttribute('data-coef');
         if (c) price *= +c;
         else price -= 20;
       });
